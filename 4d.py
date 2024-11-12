@@ -37,7 +37,7 @@ def update(frame):
 
 ani = FuncAnimation(fig, update, frames=36, interval=500, repeat=True)
 
-save_path = "Z:/Burp/4D_Array_Animation.gif"
+save_path = "your path to download file"
 ani.save(save_path, writer=PillowWriter(fps=2))
 
 print(f"Animation saved as {save_path}")
