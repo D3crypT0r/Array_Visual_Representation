@@ -10,11 +10,13 @@
 
 # 4D Array
 
-Each Frame Shows a 3D Slice of a Fixed w-layer: In each frame, we set w to a specific layer (such as w = 0, w = 1, etc.).
+# 4D Array
+1. Each Frame Shows a 3D Slice of a Fixed w-layer: In each frame, we set w to a specific layer (such as w = 0 , w = 1, etc.).
 By iterating through different values of w in the animation, we show each 3D cross-section (a "slice" of w) one at a time.
-Only x, y, z Coordinates Are Plotted:
-Within each fixed w-layer, we visualize x, y, and z positions in 3D space.
-The fourth dimension, w, is used only to distinguish which 3D slice is displayed, rather than being plotted as a spatial coordinate.
-Colors Distinguish Each w-layer: The colors (e.g., red, green, black) represent different w-layers visually, making it clear which 3D layer (or "slice") is being shown in each frame
+
+2. Only x, y, z Coordinates Are Plotted:
+  Within each fixed w-layer, we visualize x, y, and z positions in 3D space.
+  The fourth dimension, w, is used only to distinguish which 3D slice is displayed, rather than being plotted as a spatial coordinate.
+3. Colors Distinguish Each w-layer: The colors (e.g., red, green, black) represent different w-layers visually, making it clear which 3D layer (or "slice") is being shown in each frame.
 
 ![4D_Array_Animation](https://github.com/user-attachments/assets/43e05719-c9b0-4212-8f11-934bd99ad8cb)
