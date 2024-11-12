@@ -9,8 +9,6 @@
 
 
 # 4D Array
-
-# 4D Array
 1. Each Frame Shows a 3D Slice of a Fixed w-layer: In each frame, we set w to a specific layer (such as w = 0 , w = 1, etc.).
 By iterating through different values of w in the animation, we show each 3D cross-section (a "slice" of w) one at a time.
 
