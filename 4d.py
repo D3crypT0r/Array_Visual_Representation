@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-from matplotlib.animation import FuncAnimation
+from matplotlib.animation import FuncAnimation, PillowWriter
 
 arr = np.arange(1, 82).reshape(3, 3, 3, 3)
 
@@ -9,7 +9,7 @@ colors = ['red', 'green', 'black']
 
 fig = plt.figure(figsize=(8, 8))
 ax = fig.add_subplot(111, projection='3d')
-ax.set_box_aspect([1,1,1])
+ax.set_box_aspect([1, 1, 1])
 
 ax.set_xlim(0, 2)
 ax.set_ylim(0, 2)
@@ -33,8 +33,11 @@ def update(frame):
     ax.set_xlabel('X-axis')
     ax.set_ylabel('Y-axis')
     ax.set_zlabel('Z-axis')
-    ax.set_title(f'4D Array Visualization -D3crypT0r -  W Layer {w_layer}', fontsize=14)
+    ax.set_title(f'4D Array Visualization - D3crypT0r - W Layer {w_layer}', fontsize=14)
 
 ani = FuncAnimation(fig, update, frames=36, interval=500, repeat=True)
 
-plt.show()
+save_path = "Z:/Burp/4D_Array_Animation.gif"
+ani.save(save_path, writer=PillowWriter(fps=2))
+
+print(f"Animation saved as {save_path}")
